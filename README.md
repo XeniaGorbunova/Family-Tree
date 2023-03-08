@@ -2,4 +2,4 @@
 
 All your family tree visualization.
 
-Stack: React, Redux Toolkit, Bootstrap.
+Stack: React, Redux Toolkit, React Bootstrap, Formik, Yup.
