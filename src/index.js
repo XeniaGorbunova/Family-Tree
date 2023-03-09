@@ -13,8 +13,10 @@ import SignUp from './components/SignUp/SignUp'
 import './index.css'
 import { store } from './redux/store'
 import PageNotFound from './components/PageNotFound/PageNotFound'
-import DetailPage from './components/DatailPage/DetailPage'
 import UserPage from './components/UserPage/UserPage'
+import PersonPage from './components/PersonPage/PersonPage'
+import LocationPage from './components/LocationPage/LocationPage'
+import FamilyTreePage from './components/FamilyTreePage/FamilyTreePage'
 // import App from './App'
 
 const router = createBrowserRouter([
@@ -35,24 +37,20 @@ const router = createBrowserRouter([
         element: <SignIn />,
       },
       {
-        path: '/products',
-        element: <Cathalog />,
+        path: '/familytree',
+        element: <FamilyTreePage />,
       },
       {
-        path: '/cart',
-        element: <Cart />,
+        path: '/location',
+        element: <LocationPage />,
       },
       {
-        path: '/product/:id',
-        element: <DetailPage />,
+        path: '/person/:id',
+        element: <PersonPage />,
       },
       {
         path: '/user/:id',
         element: <UserPage />,
-      },
-      {
-        path: '/favorites',
-        element: <FavoritesPage />,
       },
       {
         path: '*',
