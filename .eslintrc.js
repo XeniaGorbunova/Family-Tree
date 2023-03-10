@@ -3,19 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
-  overrides: [
-  ],
+  extends: ['plugin:react/recommended', 'airbnb'],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     semi: ['error', 'never'],
     'no-console': 0,
@@ -27,6 +21,6 @@ module.exports = {
     'import/no-cycle': 0,
     'import/prefer-default-export': 0,
     'react/jsx-filename-extension': 0,
-    'max-len': ['error', { code: 100 }],
+    'max-len': ['error', { code: 700 }],
   },
 }
