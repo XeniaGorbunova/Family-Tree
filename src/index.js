@@ -1,10 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Provider } from 'react-redux/es/exports'
 import App from './App'
 import Main from './components/Main/Main'
@@ -17,6 +14,7 @@ import UserPage from './components/UserPage/UserPage'
 import PersonPage from './components/PersonPage/PersonPage'
 import LocationPage from './components/LocationPage/LocationPage'
 import FamilyTreePage from './components/FamilyTreePage/FamilyTreePage'
+import 'bootstrap/dist/css/bootstrap.min.css'
 // import App from './App'
 
 const router = createBrowserRouter([
@@ -63,10 +61,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
-
-  </React.StrictMode>,
+  </React.StrictMode>
 )
