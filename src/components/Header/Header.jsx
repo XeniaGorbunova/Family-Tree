@@ -1,5 +1,11 @@
+import styles from './HeaderStyles.module.css'
+
 function Header() {
-  return <h1>Header</h1>
+  return (
+    <div className={styles.container}>
+      <p>Header</p>
+    </div>
+  )
 }
 
 export default Header
