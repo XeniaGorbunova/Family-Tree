@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { TREE_LS_KEY } from './constants'
 
 export const initState = {
