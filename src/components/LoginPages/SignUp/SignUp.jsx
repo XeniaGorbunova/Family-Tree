@@ -36,27 +36,27 @@ function SignUp() {
   }
 
   return (
-    <div className='login__container mx-auto'>
-      <div className='login__title'>
-        <h1 className='text-uppercase'>Добро пожаловать на наш сайт</h1>
+    <div className="login__container mx-auto">
+      <div className="login__title">
+        <h1 className="text-uppercase">Добро пожаловать на наш сайт</h1>
       </div>
-      <div className='login__grid'>
-        <Row className='mb-3'>
-          <Col className='login__form p-0'>
+      <div className="login__grid">
+        <Row className="mb-3">
+          <Col className="login__form p-0">
             <LoginForm
               submitHandler={signUpHandler}
               isError={isError}
               error={errorMsg}
             />
           </Col>
-          <Col className='login__right-block'>
-            <div className='login__text text-uppercase text-white mb-5'>
+          <Col className="login__right-block">
+            <div className="login__text text-uppercase text-white mb-5">
               <span>Сохраните память о предках</span>
             </div>
-            <LinkContainer to='/signin'>
+            <LinkContainer to="/signin">
               <Button
-                className='w-50 text-uppercase d-flex justify-content-center align-items-center'
-                variant='green'
+                className="w-50 text-uppercase d-flex justify-content-center align-items-center"
+                variant="green"
               >
                 <span>Войти</span>
               </Button>

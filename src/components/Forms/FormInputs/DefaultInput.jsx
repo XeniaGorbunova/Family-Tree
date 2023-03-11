@@ -27,7 +27,7 @@ export function DefaultInput({ ...props }) {
         {...field}
       />
       {showFeedback ? (
-        <Form.Control.Feedback type='invalid' tooltip>
+        <Form.Control.Feedback type="invalid" tooltip>
           {error}
         </Form.Control.Feedback>
       ) : null}
