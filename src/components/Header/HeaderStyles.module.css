@@ -2,9 +2,9 @@
     height: 100px;
     width: 1280px;
     /* padding: 43px 150px 26px 150px; */
-    background-image: url(../../images/header_light.png);
+    background-image: url(../../assets/header_light.png);
     margin: auto;
-    
+
 }
 
 p {
