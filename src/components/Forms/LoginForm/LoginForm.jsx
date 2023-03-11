@@ -34,33 +34,33 @@ export function LoginForm({
       {({ isValid, handleSubmit, handleClick }) => (
         <Form noValidate onSubmit={handleSubmit}>
           <Form.Group
-            className="mb-5 position-relative"
+            className='mb-5 position-relative'
             as={Col}
-            controlId="email"
+            controlId='email'
           >
             <DefaultInput
-              type="email"
-              name="email"
-              placeholder="Введите логин"
-              autoComplete="on"
+              type='email'
+              name='email'
+              placeholder='Введите логин'
+              autoComplete='on'
             />
           </Form.Group>
           <Form.Group
-            className="mb-5 position-relative"
+            className='mb-5 position-relative'
             as={Col}
-            controlId="password"
+            controlId='password'
           >
             <DefaultInput
-              type="password"
-              name="password"
-              placeholder="Введите пароль"
-              autoComplete="on"
+              type='password'
+              name='password'
+              placeholder='Введите пароль'
+              autoComplete='on'
             />
           </Form.Group>
           <Button
-            className="w-50 text-uppercase"
-            type="submit"
-            variant="green"
+            className='w-50 text-uppercase'
+            type='submit'
+            variant='green'
             disabled={isLoading || !isValid}
             onClick={!isLoading ? handleClick : null}
           >
