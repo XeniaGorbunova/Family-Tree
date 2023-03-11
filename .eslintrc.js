@@ -11,9 +11,6 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'jsx-quotes': ['error', 'prefer-single'],
-    'comma-dangle': 'off',
-    '@typescript-eslint/comma-dangle': 'off',
     semi: ['error', 'never'],
     'no-console': 0,
     'linebreak-style': 0,
