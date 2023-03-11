@@ -20,11 +20,14 @@ const userSlice = createSlice({
         }
       },
     },
+    logIn(state, action) {
+      state.token = action.payload
+    },
     logOut() {
       return initState.user
     },
   },
 })
-export const { setNewUser, logOut } = userSlice.actions
+export const { setNewUser, logIn, logOut } = userSlice.actions
 export const getUserSelector = (state) => state.user
 export const userReducer = userSlice.reducer
