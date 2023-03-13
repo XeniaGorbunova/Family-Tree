@@ -1,5 +1,7 @@
+import { Loader } from '../Loader/Loader'
+
 function UserPage() {
-  return <h1>UserPage</h1>
+  return <Loader />
 }
 
 export default UserPage
