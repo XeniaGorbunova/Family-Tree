@@ -1,11 +1,12 @@
 
+
 .background_light {
-    height: 100px;
+    height: 10vh;
     width: 1280px;
     padding: 35px 150px 0 150px;
     background-image: url(../../images/header_light.png);
     margin: auto;
-    
+
 }
 
 .background_dark {
