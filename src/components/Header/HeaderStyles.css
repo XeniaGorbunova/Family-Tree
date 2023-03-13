@@ -1,4 +1,6 @@
-.bg {
+
+
+.background_light {
     height: 10vh;
     width: 1280px;
     padding: 35px 150px 0 150px;
@@ -7,12 +9,27 @@
 
 }
 
+.background_dark {
+    height: 100px;
+    width: 1280px;
+    padding: 35px 150px 0 150px;
+    background-image: url(../../images/header_dark.png);
+    margin: auto;
+}
+
 .link {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    cursor: pointer;
 
+}
 
+.link_white {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .link:focus {
@@ -20,6 +37,17 @@
     text-decoration-color: black;
     color: black;
 
+}
+
+.link_white:focus {
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+
+}
+
+.link_white:hover {
+    color: white;
 }
 
 .link:hover {
@@ -35,6 +63,18 @@
 
 }
 
+.search_white {
+    color: white;
+    background-image: url(../../images/Rectangle\ 7.png);
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
 .search:focus {
+    outline-style: none;
+}
+
+.search_white:focus {
     outline-style: none;
 }
