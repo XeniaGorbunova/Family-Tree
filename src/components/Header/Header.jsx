@@ -1,16 +1,18 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './HeaderStyles.css'
 import { MenuBar } from './MenuBar'
 
 function Header() {
-  console.log(1)
+  const location = useLocation()
+  const lightStyle = location.pathname === '/'
+
   return (
-    <div className="bg">
+    <div className={`${lightStyle ? 'background_light' : 'background_dark'}`}>
       <div className="d-flex justify-content-md-between">
-        <Link to="/" className="link">
+        <Link to="/" className={`${lightStyle ? 'link' : 'link_white'}`}>
           <span>О ПРОЕКТЕ</span>
         </Link>
-        <MenuBar />
+        <MenuBar lightStyle={lightStyle} />
       </div>
     </div>
   )
