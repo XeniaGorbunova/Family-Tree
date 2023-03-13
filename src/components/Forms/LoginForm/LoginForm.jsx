@@ -34,7 +34,7 @@ export function LoginForm({
       {({ isValid, handleSubmit, handleClick }) => (
         <Form noValidate onSubmit={handleSubmit}>
           <Form.Group
-            className="mb-5 position-relative"
+            className="position-relative"
             as={Col}
             controlId="email"
           >
@@ -46,7 +46,7 @@ export function LoginForm({
             />
           </Form.Group>
           <Form.Group
-            className="mb-5 position-relative"
+            className="position-relative"
             as={Col}
             controlId="password"
           >
