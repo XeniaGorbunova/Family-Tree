@@ -1,5 +1,9 @@
 .page__container {
   width: 1280px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .image {
@@ -13,7 +17,6 @@
 
 .title {
   background-color: rgba(255, 255, 255, 1);
-  height: 225px;
   display: flex;
   align-items: center;
   justify-content: center;
