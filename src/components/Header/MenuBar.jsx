@@ -17,7 +17,7 @@ export function MenuBar({ lightStyle }) {
 
   if (!token) {
     return (
-      <Link to="signin" className="link">
+      <Link to="signin" className={`${lightStyle ? 'link' : 'link_white'}`}>
         <span>ВОЙТИ / РЕГИСТРАЦИЯ</span>
       </Link>
     )
